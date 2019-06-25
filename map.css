@@ -1,0 +1,54 @@
+body
+{
+    background-color: #08F6FF;
+}
+.center {
+    text-align: center;
+}
+.weatherForm   {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin-left: 200px;
+        margin-right: 200px; 
+    }
+
+    .map {
+        height: 200px;
+        width: 100px;
+        border-style: solid;
+        border-color: black;
+        padding: 10px;
+        
+      }
+
+
+
+
+
+
+
+
+
+            
+/* .map {
+    height: 400px;
+   width: 100px;
+ }   
+
+ .widget {
+	width: 100%;
+	height: 280px;
+	height: 300px;
+	margin: 0 auto;
+    
+    
+    
+    
+    /* .map {
+                width: 100%;
+                height: 280px;
+                height: 300px;
+                margin: 0 auto;
+            } */ */
