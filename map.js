@@ -7,8 +7,8 @@ const localmap = new ol.Map({
   source: vectorSource,
   target: 'map',
   view: new ol.View({
-      center: [-658587.715260747, 7283495.399471995],
-      zoom: 9
+      center: [41465660.87679919, 5144550.471643802],
+      zoom: 20
   })
 });
 
@@ -43,4 +43,19 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+lo
 
 });
 
+function convertCords (latitude, longitude){
+  var coor_from = new OpenLayers.Projection("EPSG:4326");
+  var coor_to   = new OpenLayers.Projection("EPSG:900913");
+  var center    = new OpenLayers.LonLat(52.63973017532399,-1.142578125 );
+  var map       = new OpenLayers.Map("demoMap");
+  center.transform(coor_from, coor_to);
+  map.addLayer(new OpenLayers.Layer.OSM());
+  map.setCenter(center, 12);
+  
+  // .then(function(coor_to) {
+  //   console.log(coor_to.stringify(coor_to));
+  //   populateData(coor_to)
+  // });
+
+}
 
