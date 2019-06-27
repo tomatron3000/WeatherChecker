@@ -319,3 +319,4 @@ Reload the page, try clicking on the map. Does the table update?
 
 Stretch Goal 1 - can you update the default map location and/or zoom? (to the Colosseum in Rome)
 Stretch Goal 2 - can you update the size of the map on the page? 
+# bensclock
